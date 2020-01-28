@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite">
+    <listeners>
+        <listener class-name="org.abryg.reports.ExtentTestNGITestListener"/>
+    </listeners>
+    <test name="Smoke Tests">
+        <packages>
+            <package name="org.abryg.smoketests"/>
+        </packages>
+    </test> <!-- Test -->
+    <test name="Cucumber Tests">
+        <packages>
+            <package name="org.abryg.runners"/>
+        </packages>
+    </test> <!-- Test -->
+    <test name="E2E Tests">
+        <packages>
+            <package name="org.abryg.e2e"/>
+        </packages>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
